@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #262626;
+}
+.rate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotateY(180deg);
+    display: flex;
+    
+}
+.rate input{
+    display: none;
+
+}
+.rate label{
+    cursor: pointer;
+    width: 50px;
+   
+}
+.rate label::before{
+    content: '★ ';
+    font-size: 60px;
+    color:#101010;
+    transition: .7s;
+}
+.rate label:hover::before, 
+.rate label:hover ~ label::before,
+.rate input:checked ~ label::before{
+    color:orange;
+}
