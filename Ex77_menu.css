@@ -119,20 +119,37 @@ Side Menu Left
     font-size: 30px;
 }
 
-input:checked + nav{
+#left:checked ~ nav{
     width: 250px;
     height: 100%;
     left: 0;
    
 }
- input:checked + nav ul>li{
+#left:checked ~ nav ul>li{
     float: none;
 }
- input:checked + nav ul a{
+#left:checked ~ nav ul a{
 padding: 0 0 0 40px;
 }
-input:checked + nav ul li ul{
+#left:checked ~ nav ul li ul{
     position: relative;
     left: 50px;
 }
 
+#right:checked ~ nav{
+    width: 250px;
+    height: 100%;
+    right: 0;
+   
+}
+#right:checked ~ nav ul>li{
+    float: none;
+}
+#right:checked ~ nav ul a{
+    text-align: end;
+padding: 0  40px 0 0;
+}
+#right:checked ~ nav ul li ul{
+    position: relative;
+    right: 50px;
+}
