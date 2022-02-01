@@ -125,10 +125,10 @@ input:checked + nav{
     left: 0;
    
 }
-input:checked + nav ul>li{
+ input:checked + nav ul>li{
     float: none;
 }
-input:checked + nav ul a{
+ input:checked + nav ul a{
 padding: 0 0 0 40px;
 }
 input:checked + nav ul li ul{
