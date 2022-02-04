@@ -27,6 +27,7 @@ The top menu way*/
 }
 .mainm  > li {
     float: left;
+    
 }
 .mainm  li a:hover{
     background-color: #434343;
@@ -45,111 +46,48 @@ The top menu way*/
 }
 
 
-/*
-Side Menu Left
-.main-menu{
-    position: fixed;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #111;
-}
-.main-menu ul a{
-    display: block;
-    line-height: 50px;
-    font-size: 15px;
-    color: white;
-    padding-left: 40px;  
-}
-.mainm  li a:hover{
-    background-color: #434343;
-    
-}
-.mainm  li ul{
-    display: none;
-    position: relative;
-    left: 50px;
-    min-width: 140px;
 
-}
-.mainm li:hover > ul{
-    display: block;
-}*/
-
-/*Side Menu Right
-.main-menu{
-    position: fixed;
-    right: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #111;
-}
-.main-menu ul a{
-    display: block;
-    text-align: end;
-    line-height: 50px;
-    font-size: 15px;
-    color: white;
-    padding-right: 40px;  
-}
-.mainm  li a:hover{
-    background-color: #434343;
-    
-}
-.mainm  li ul{
-    display: none;
-    position: relative;
-    right: 50px;
-    min-width: 140px;
-
-}
-.mainm li:hover > ul{
-    display: block;
-}*/
-
-
-.styl{
-    position: relative;
-    left: 400px;
-    top: 300px;
-    font-size: 20px;
-    text-align: left;
-}
-.styl p{
-    font-size: 30px;
-}
 
 #left:checked ~ nav{
-    width: 250px;
+    width: 150px;
     height: 100%;
     left: 0;
    
 }
 #left:checked ~ nav ul>li{
     float: none;
+    position: relative;
+   
+    
+    
+
 }
 #left:checked ~ nav ul a{
 padding: 0 0 0 40px;
 }
 #left:checked ~ nav ul li ul{
-    position: relative;
-    left: 50px;
+    position: absolute;
+    top: 0px;
+    left: 140px;
+
 }
 
 #right:checked ~ nav{
-    width: 250px;
+    width: 150px;
     height: 100%;
     right: 0;
    
 }
 #right:checked ~ nav ul>li{
     float: none;
+    position: relative;
 }
 #right:checked ~ nav ul a{
     text-align: end;
 padding: 0  40px 0 0;
 }
 #right:checked ~ nav ul li ul{
-    position: relative;
-    right: 50px;
+    position: absolute;
+    top: 0px;
+    right: 140px;
 }
