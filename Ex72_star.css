@@ -26,8 +26,82 @@
     color:#101010;
     transition: .7s;
 }
+.rate2 {
+    position: absolute;
+     top: 25%;
+     left: 50%;  
+ }
+.rate2 .outer{
+    position: absolute;
+    top:37%;
+    left:-3%;
+    display: block; 
+    width: 65px; 
+    height: 13px; 
+    background: url(star-rating-sprite.png) 0 0  no-repeat;
+   
+
+}
+.outer .inner{
+    display: block; 
+    width: 0%; 
+    height: 13px; 
+    background: url(star-rating-sprite.png) 0 -13px;
+    transition: .7s;
+
+}
+
+.rate2 input{
+    display: none;
+
+}
+.rate2 label{
+    cursor: pointer;
+    width: 30px;
+    height: 15px;
+   
+   
+}
+.rate2 label::before{
+    content: '.';
+    font-size: 36px;
+    color:#101010;
+    transition: .7s;
+}
+   
+
+}
+.rate2 label{
+    cursor: pointer;
+    width: 13px;
+   
+}
+
+
+
 .rate label:hover::before, 
 .rate label:hover ~ label::before,
 .rate input:checked ~ label::before{
     color:orange;
 }
+
+#str1:checked ~ .outer > .inner, #str1:hover ~ .outer > .inner  {
+    width: 20%;
+}
+#str2:checked ~ .outer > .inner , #str2:hover ~ .outer > .inner{
+    width: 40%;
+}
+#str3:checked ~ .outer > .inner , #str3:hover ~ .outer > .inner{
+    width: 60%;
+}
+#str4:checked ~ .outer > .inner , #str4:hover ~ .outer > .inner{
+    width: 80%;
+}
+#str5:checked ~ .outer > .inner, #str5:hover ~ .outer > .inner {
+    width: 100%;
+}
+
+
+
+
+
