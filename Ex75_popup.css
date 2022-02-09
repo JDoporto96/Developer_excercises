@@ -29,28 +29,28 @@ text-align: center;
 
 .w{
     position: fixed;
-    top:35%;
-    left: 35%;
+    top:20%;
+    left: 33%;
 }
 .o{
     position: fixed;
-    top:35%;
+    top:20%;
     left: 45%;
 }
 .r{
     position: fixed;
-    top:35%;
+    top:20%;
     left: 55%;
 }
 .d{
     position: fixed;
-    top:35%;
+    top:20%;
     left: 62%;
 }
 
 .letter:hover{
-    font-size: 150px;
+    font-size: 170px;
     color: rgb(240, 140, 9);
     cursor: pointer;
-    top:20%;
+    top:10%;
 }
