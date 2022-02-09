@@ -28,17 +28,18 @@
 }
 .rate2 {
     position: absolute;
-     top: 25%;
+     top: 45%;
      left: 50%;  
  }
 .rate2 .outer{
     position: absolute;
-    top:37%;
+    top:60%;
     left:-3%;
     display: block; 
     width: 65px; 
     height: 13px; 
     background: url(star-rating-sprite.png) 0 0  no-repeat;
+    z-index: 1;
    
 
 }
@@ -48,7 +49,8 @@
     height: 13px; 
     background: url(star-rating-sprite.png) 0 -13px;
     transition: .7s;
-
+    position: relative;
+   
 }
 
 .rate2 input{
@@ -56,26 +58,24 @@
 
 }
 .rate2 label{
+    position: relative;
     cursor: pointer;
-    width: 30px;
+    width: 60px;
     height: 15px;
+    cursor: pointer;
+    
    
    
 }
 .rate2 label::before{
     content: '.';
     font-size: 36px;
-    color:#101010;
+    color:transparent;
     transition: .7s;
+    position: relative;
+    z-index: 2;
 }
    
-
-}
-.rate2 label{
-    cursor: pointer;
-    width: 13px;
-   
-}
 
 
 
